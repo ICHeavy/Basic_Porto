@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample article on Jack of Stacks blog.">
+    <title>Sample Article - Jack of Stacks</title>
+    <link rel="stylesheet" href="theme.css"> <!-- Base theme CSS -->
+    <link rel="stylesheet" href="article.css"> <!-- Article-specific CSS -->
+</head>
+
+<body>
+    <!-- Header Section with Logo -->
+    <header>
+        <div id="logo">
+            <!-- Placeholder for future logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about.html">About</a></li>
+                <li><a href="../../toc.html">View the Deck</a></li>
+                <li><a href="../../contact.html">Call the Jack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <h4>Class policies</h4>
+        <ul>
+            <li>Respect each other.</li>
+            <li>Respect the equipment.
+                <ul>
+                    <li>Do not run the motors when the robot is stuck; get it unstuck first.</li>
+                    <li>Don’t run the robot into walls, people, etc.</li>
+                    <li>Don’t make the robot move if it’s on the table.</li>
+                </ul>
+            </li>
+            <li>Listen when you’re asked to listen; do not talk over anyone.
+                <ul>
+                    <li>You don’t have to raise your hand, but do not interrupt, or this rule will change.</li>
+                </ul>
+            </li>
+            <li>Come prepared; if homework is given, it should be done when you show up.</li>
+            <li>All blocks of code must have comments.</li>
+            <li>Don’t be afraid to ask questions or ask for help, but if you ask for help, you must try to fix it on your own three times first.
+                <ul>
+                    <li>You will show me the issue and the three different solutions you tried before calling for assistance.</li>
+                </ul>
+            </li>
+            <li>We are exploring new ideas, and the best way to learn is to try and fail.</li>
+        </ul>
+        
+        <h4>Sphero RVR and BOLT</h4>
+        <p>We will be using programmable robots that include various sensors and outputs to enable interactive and advanced robotics projects.</p>
+        
+        <h4>Sensors:</h4>
+        <ul>
+            <li>Light sensor</li>
+            <li>Infrared sensor</li>
+            <li>Compass</li>
+            <li>Gyroscope</li>
+            <li>Accelerometer</li>
+            <li>Color sensor (RVR only)</li>
+            <li>Magnetometer (RVR only)</li>
+            <li>8x8 LED matrix (BOLT only)</li>
+        </ul>
+        
+        <h4>Outputs:</h4>
+        <ul>
+            <li>Motors</li>
+            <li>Universal expansion port for additional hardware (RVR only)</li>
+            <li>LED matrix for visual feedback (BOLT only)</li>
+        </ul>
+        
+        <h4>What is a robot?</h4>
+        <p>A robot is a programmable, self-controlled device made up of electronic, electrical, or mechanical units. Essentially, it functions in place of a living agent, often performing tasks that are repetitive, dangerous, or require precision beyond human capabilities. Robots typically have sensors to perceive their environment, actuators to move or manipulate objects, and processors to make decisions based on sensory data.</p>
+        
+        <h4>Real Robots</h4>
+        <p>Robots have appeared in various forms in both fiction and reality. Iconic movie robots include R2-D2 from "Star Wars" and the robot dog from Boston Dynamics. Real-world examples range from industrial robots used in manufacturing to drones and robots designed for space exploration. Additionally, innovative bio-robots are being developed using cells and organic tissue, showcasing the advancing frontier of robotics technology. Unlike traditional desktop computers or phones, which primarily process data and communicate digitally, robots interact with the physical world, using their mechanical and electronic components to perform tasks autonomously.</p>
+        
+        <h4>Autonomous vs Automatic</h4>
+        <p>Autonomous systems can make their own decisions and take action based on their environment, without human input. In contrast, automatic systems follow set instructions and can't adapt to changes or new situations. An autonomous car can navigate city streets and avoid obstacles by itself, while an automatic car wash follows a fixed routine and can't adjust if something unexpected happens.</p>
+        
+        <h4>What’s in a computer?</h4>
+        <p>A computer consists of three main components: the processor, storage, and memory. The processor, or CPU, is the brain of the computer that performs calculations and executes instructions. Storage, like a hard drive or SSD, retains information even when the computer is off, such as saving an essay so you can continue working on it later. Memory, or RAM, temporarily holds data that the computer needs while running, like a variable in a program that only exists while the program is active and is cleared when it stops.</p>
+        
+        <h4>What is a program?</h4>
+        <p>A code, or program, is a set of instructions that a computer executes to perform specific tasks. It tells the computer how to process data, make calculations, and interact with hardware. Programs can range from simple commands to complex systems, enabling everything from displaying text to controlling robots. Writing code involves defining variables, using loops and conditionals, and breaking tasks into functions for efficient problem-solving.</p>
+        
+        <h4>Main Loop and Functions</h4>
+        <p>Code runs sequentially, and when we put code under the "on start program" block, it becomes what we call the main function because the primary part of your code runs there. Functions are blocks of reusable code that achieve a specific purpose, and it’s good practice to name them according to what they do without using spaces. If we create a function, we must call that function under the "on start program" block to use it. Functions need inputs to run correctly, and these inputs must not be empty.</p>
+        
+        <h4>Systems and Functions</h4>
+        <p>A system broadly refers to a set of interconnected components working together for a common purpose. In robotics, this can refer to individual systems on the robot, like the motor system or the sensor system, each performing different tasks. For example, our immune system and nervous system have distinct roles. Similarly, a function we create in programming is also a system because it has inputs and outputs. The data handled in a function are local variables, meaning they exist only when the function is called and are deleted after it's done. Therefore, you can't put something like a counter for your main loop inside a function as it needs to persist across function calls.</p>
+        
+        <h4>Creating a Program</h4>
+        
+        <ul>
+            <li><strong>Open Sphero Edu App:</strong>
+                <ul>
+                    <li>Download and open the Sphero Edu app on your device.</li>
+                    <li>Sign in to the class with code: XXXXX</li>
+                </ul>
+            </li>
+        
+            <li><strong>Connect Robot:</strong>
+                <ul>
+                    <li>Ensure Robot is charged and powered on.</li>
+                    <li>Connect to the Robot via Bluetooth.</li>
+                </ul>
+            </li>
+        
+            <li><strong>Create a New Program:</strong>
+                <ul>
+                    <li>Go to “Programs” tab and select “Create.”</li>
+                    <li>Choose “Blocks” as the programming method.</li>
+                    <li>Name your program “Lesson_X_Name_Of_Your_Choice” (e.g., “Lesson_1_Move_Forward”).</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Explanation of Categories</h4>
+        <ul>
+            <li><strong>Controls:</strong> Include delays, loops, and if statements.
+                <ul>
+                    <li><strong>Delays:</strong> Pause the program for a certain amount of time.</li>
+                    <li><strong>Forever:</strong> Loops a block of code forever.</li>
+                </ul>
+            </li>
+        
+            <li><strong>Operators:</strong> Perform operations on data such as math, random numbers, and data conversion.
+                <ul>
+                    <li><strong>Math Blocks:</strong> All math blocks are considered as a set of parenthesis (e.g., 1 - (2 + 3)).</li>
+                    <li><strong>Conversion:</strong> Necessary for treating data differently based on its type, including:
+                        <ul>
+                            <li><strong>Booleans:</strong> True or false values.</li>
+                            <li><strong>Floats:</strong> Decimal numbers.</li>
+                            <li><strong>Integers:</strong> Integers.</li>
+                            <li><strong>Strings:</strong> Words or arrays of characters, more relevant in scripting.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        
+            <li><strong>Comparators:</strong> Compare values using equality and logical operators (and/or).</li>
+            <li><strong>Sensors:</strong> Variables that contain the value of the robot's sensors, which can be set and read.</li>
+            <li><strong>Communications / Events:</strong> Topics for a future class.</li>
+        </ul>
+        
+        <h4>How to Code</h4>
+        <p>Drag and drop the coding blocks just like in Scratch. Each start block runs once every time you hit play. If you want your robot to keep doing something or repeat actions, you’ll need to code those actions explicitly. All computers follow this principle of running instructions as programmed.</p>
+        
+        <h4>Using Comments</h4>
+        <p>You can right-click to access comments, duplicate blocks, or get help to understand how a block works. Adding comments is crucial for clarity and troubleshooting:</p>
+        <ul>
+            <li><strong>What to Comment:</strong> Describe what your code is doing (e.g., "This function calculates the missing side of a triangle").</li>
+            <li><strong>Why to Comment:</strong> If anything was confusing when you did it or required help to fix, make sure to comment on that as well.</li>
+        </ul>
+        
+        <h4>Mathematical Operations</h4>
+        <p>We can do math with all basic operators and even some advanced ones. Each block should be treated with parentheses around it, like (1-(2+3)), to ensure correct order of operations. This helps in understanding and debugging your code more effectively.</p>
+        
+        <p>By following these guidelines, you'll be able to write clear, effective, and well-documented code for your Sphero RVR projects.</p>
+        
+        <h4>Activity: Intro to Variables and Sounds</h4>
+        <p><strong>Objective:</strong> Create and use a variable, make the robot speak, change LED colors, and play a sound.</p>
+        <ol>
+            <li>Create an integer variable called age and set it to your age.</li>
+            <li>Use a Speak block to say your name and age.</li>
+            <li>Use another Speak block to say your favorite color.</li>
+            <li>Set the LED to your favorite color.</li>
+            <li>Use a Play Sound block to play a random sound.</li>
+        </ol>
+        
+        <p><strong>Question:</strong></p>
+        <ul>
+            <li>What did you have to do to the age variable to make the robot say it?</li>
+        </ul>
+        
+        <h4>Activity: Intro to Lights and Controls</h4>
+        <p><strong>Objective:</strong> Make your robot look like a police car with flashing red and blue lights.</p>
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li>Your task is to make the robot's lights flash like a police car.</li>
+            <li>Use the lights blocks to control the LEDs.</li>
+            <li>You’ll need a forever block to make the lights flash continuously.</li>
+            <li>Use the delay block to control the speed of the flashing lights.</li>
+        </ol>
+        
+        <p><strong>Hints:</strong></p>
+        <ul>
+            <li>Think about how you can use the forever block to keep the lights flashing.</li>
+            <li>Experiment with the delay block to find the right speed for the lights.</li>
+            <li>Use what we've discussed about controls and lights to solve the challenge.</li>
+        </ul>
+        
+        <p><strong>Challenge:</strong></p>
+        <ul>
+            <li>Who can make the lights blink the fastest?</li>
+        </ul>
+        
+        <h4>Why Can't You Make It Go Any Faster?</h4>
+        <p>This limitation is due to the clock speed of the computer inside the robot. The clock determines how fast the robot can execute each instruction. Think of it as the computer’s heartbeat—each beat allows one instruction to be processed. Clever programming strings these limited instructions together to perform complex tasks, but each individual operation can only happen at the clock’s speed.</p>
+        
+        <h4>Activity: Advanced Lights and Controls</h4>
+        <p><strong>Objective:</strong> Recreate the police car effect without directly selecting the colors red or blue. Experiment with new blocks and techniques.</p>
+        <p><strong>Background:</strong></p>
+        <p>LEDs have three color channels: Red, Green, and Blue (RGB). Each channel is an integer value from 0-255, stored as an array of three numbers: [R, G, B]. This scale ranges from 0 (off) to 255 (max). When all channels are at 0, the color is black; when all are at 255, the color is white. Primary colors are red, blue, and yellow, while secondary colors are green, orange, and purple. To isolate primary colors, adjust the channels of secondary colors by removing one channel. Instead of directly using red or blue, create these colors by adjusting the RGB channels. For example, to create red, use an orange color like [255, 165, 0] and reduce the green and blue channels to 0. To create blue, use a purple color like [128, 0, 128] and reduce the red and green channels to 0.</p>
+        
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li>Create and set RGB values to simulate red and blue.</li>
+            <li>Use the RGB values to set the LEDs to red and blue using indirect color manipulation.</li>
+            <li>Address the lights using the variables storing the address for the lights found in the operators and sensors sections.</li>
+            <li>Use a loop to alternate between the two colors.</li>
+            <li>Add delay blocks to control the flashing speed.</li>
+            <li>Use a forever loop to make the lights flash continuously.</li>
+            <li>Experiment with different blocks to achieve the desired effect.</li>
+        </ol>
+        
+        <p><strong>Challenge/Questions:</strong></p>
+        <ul>
+            <li>How does changing the RGB values indirectly help in achieving the desired color effect? Do any colors work better than others?</li>
+            <li>Experiment with different blocks and find the most efficient way to create the police car effect.</li>
+        </ul>
+        
+        <h4>Activity: Roll My Height</h4>
+        <p><strong>Objective:</strong> Make the robot roll exactly your height.</p>
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li><strong>Create a Function:</strong>
+                <ul>
+                    <li>Create a function with two input variables: feet and inches.</li>
+                    <li>Use the conversion: 1 foot = 12 inches and 1 inch = 2.54 centimeters.</li>
+                    <li>Calculate your height in centimeters.</li>
+                    <li>Create a variable called my_height to hold the final amount in centimeters.</li>
+                </ul>
+            </li>
+            <li><strong>Hint:</strong>
+                <ul>
+                    <li>Drag the green function inputs and use them in your function. These are local variables and only viewable within your function.</li>
+                    <li>Use a global variable (the red ones) to save the result so it can be used in the main loop.</li>
+                    <li>You will need to set a global variable in your code.</li>
+                    <li>Local variables are defined when you call the function and the function cannot run without you giving it inputs.</li>
+                </ul>
+            </li>
+            <li><strong>Main Loop:</strong>
+                <ul>
+                    <li>Call the function with the correct inputs (your height in feet and inches).</li>
+                    <li>Use a movement block to roll the robot forward the calculated distance (my_height) at a speed of 100.</li>
+                </ul>
+            </li>
+            <li><strong>Test the Program:</strong>
+                <ul>
+                    <li>Lay on the ground and place the robot just above your head, facing your toes (not pointing at your face).</li>
+                    <li>Have a friend hit play and watch the robot roll up toward your feet and stop right at your toes.</li>
+                </ul>
+            </li>
+        </ol>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><h3>Wanna get in touch?</h3> <a href="contact.html"> Call the Jack</a></p>
+    </footer>
+</body>
+
+</html>
+    
